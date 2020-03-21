@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 20px;
 }
 
 .business_card {
@@ -17,11 +18,24 @@
 .name {
     position: absolute;
     top: 40vh;
-    text-align: left;
+}
+
+.name a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    background: #0078FF;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+.name a:hover {
+    background: #0056DD
 }
 
 .profile {
-    position: absolute;
+    position: fixed;
     width: 6.5vw;
     left: 92vw;
     top: 42vh;
@@ -42,25 +56,98 @@
 
 h1 {
     font-family: sans-serif;
-    font-size: 75px;
+    font-size: 70px;
 }
 
 h2 {
     font-family: serif;
-    font-size: 29px;
+    font-size: 30px;
 }
 
+.art {
+    background: url(src/art/Mo%C3%A7a%20da%20palleta.jpg);
+    background-color: white;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art:hover {
+    background: url(src/art/Mo%C3%A7a%20da%20palleta%20flat.jpg);
+    background-color: white;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.art:active {
+    background: url(src/art/Mo%C3%A7a%20da%20palleta%20Line.jpg);
+    background-color: white;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.presentation {
+    height: 100vh;
+}
+
+.about h1 {
+    text-align: center;
+}
+
+.about {
+    position: absolute;
+    width: 80vw;
+    top: 225vh;
+    text-align: justify;
+
+}
+
+.about a {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    background: #0078FF;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+.about a:hover {
+    background: #0056DD
+}
+
+/*.galery {
+    background-color: #333;
+    color: white;
+    height: 100vh;
+}*/
+
 @media screen and (max-width: 700px) {
+    * {
+        font-size: 18px
+    }
+
     .profile {
         left: 85vw;
-        top: 45vh;
+        top: 25vh;
     }
 
     h1 {
-        font-size: 55px;
+        font-size: 52px;
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 20px;
+    }
+
+    .about {
+        top: 210vh;
+        width: 60vw;
+        left: 20vw;
     }
 }
