@@ -16,7 +16,7 @@
 }
 
 .name {
-    position: absolute;
+    position: relative;
     top: 40vh;
 }
 
@@ -65,30 +65,42 @@ h2 {
 }
 
 .art {
-    background: url(src/art/Mo%C3%A7a%20da%20palleta.jpg);
-    background-color: white;
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #222;
+    color: white;
+    height: 100vh;
+    font-family: sans-serif;
 }
 
-.art:hover {
-    background: url(src/art/Mo%C3%A7a%20da%20palleta%20flat.jpg);
-    background-color: white;
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+.art a{
+    text-decoration: none;
+    color: white;
 }
 
-.art:active {
-    background: url(src/art/Mo%C3%A7a%20da%20palleta%20Line.jpg);
-    background-color: white;
-    min-height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+.gallery{
+    padding: 5vw;
+}
+
+.image{
+    border: 1px solid #aaa;
+    width: 15vw;
+    text-align: center;
+    border-radius: 1vw;
+    float: left;
+    margin: 0vw 2vw 0vw 0vw;
+}
+
+.image:hover{
+    border: 1px solid #fff
+}
+
+.image img{
+    width: 80%;
+    border-radius: 1vw;;
+    margin: 1vw 1vw 0px 1vw;
+}
+
+.desc{
+    margin: 1vw;
 }
 
 .presentation {
@@ -100,9 +112,9 @@ h2 {
 }
 
 .about {
-    position: absolute;
+    position: relative;
     width: 80vw;
-    top: 225vh;
+    top: 25vh;
     text-align: justify;
 
 }
@@ -116,16 +128,6 @@ h2 {
     padding: 1vh;
     border-radius: 1vh;
 }
-
-.about a:hover {
-    background: #0056DD
-}
-
-/*.galery {
-    background-color: #333;
-    color: white;
-    height: 100vh;
-}*/
 
 @media screen and (max-width: 700px) {
     * {
@@ -144,10 +146,18 @@ h2 {
     h2 {
         font-size: 20px;
     }
+    
+    .art{
+        height: 207vh;
+    }
 
+    .image{
+        width: 45vw;
+        margin: 0vw 0vw 5vw 0vw;
+    }
+    
     .about {
-        top: 210vh;
+        top: 10vh;
         width: 60vw;
-        left: 20vw;
     }
 }
