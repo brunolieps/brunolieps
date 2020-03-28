@@ -206,51 +206,20 @@ h2 {
     border-radius: 1vh;
 }
 
-@media screen and (max-width: 820px) {
-    * {
-        font-size: 13px;
-    }
-
-    h1 {
-        font-size: 45px;
-    }
-    
-    h2 {
-        font-size: 15px;
-    }
-    
-    .nav{
-        left: 8vw;
-        animation-name: none;
-    }
-    
-    .profile{
-        top: 30vh;
-    }
-    
-    .profile img{
-        width: 7vh;
-    }
-    
-    .art{
-        height: 115vh;
-    }
-}
-
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 700px) {
     * {
         font-size: 18px
     }
 
     .nav {
-        width: 80vw;
-        left: 8vw;
+        width: 60vw;
+        left: 25vw;
         animation-name: none;
     }
 
     .profile {
         left: 85vw;
-        top: 48vh;
+        top: 25vh;
         animation-name: none;
     }
 
@@ -261,24 +230,24 @@ h2 {
     h2 {
         font-size: 20px;
     }
-
-    .services {
+    
+    .services{
         height: 205vh;
     }
-
-    .group {
+    
+    .group{
         left: 12.5vw;
     }
-
-    .vitrini {
+    
+    .vitrini{
         width: 50vw;
     }
 
     .art {
-        height: 320vh;
+        height: 415vh;
     }
-
-    .gallery {
+    
+    .gallery{
         text-align: center;
     }
 
