@@ -212,12 +212,15 @@ h2 {
     }
 
     .nav {
-        width: 10vw;
+        width: 60vw;
+        left: 25vw;
+        animation-name: none;
     }
 
     .profile {
         left: 85vw;
         top: 25vh;
+        animation-name: none;
     }
 
     h1 {
@@ -227,15 +230,33 @@ h2 {
     h2 {
         font-size: 20px;
     }
+    
+    .services{
+        height: 205vh;
+    }
+    
+    .group{
+        left: 12.5vw;
+    }
+    
+    .vitrini{
+        width: 50vw;
+    }
 
     .art {
         height: 415vh;
+    }
+    
+    .gallery{
+        text-align: center;
     }
 
     .image {
         width: 45vw;
         margin: 2vw 0vw 0vw 0vw;
         border-radius: 3vw;
+        position: relative;
+        left: 17vw;
     }
 
     .image img {
@@ -260,7 +281,7 @@ h2 {
 
 @keyframes back-color {
     0% {
-        background-color: white;
+        background-color: #5400ff;
     }
 
     100% {
