@@ -24,8 +24,6 @@ html {
     position: relative;
     top: 8vh;
     left: 6vw;
-    animation-name: nav;
-    animation-duration: 1s;
 }
 
 .nav a {
@@ -207,6 +205,25 @@ h2 {
     border-radius: 1vh;
 }
 
+.inLive {
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.live {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.live iframe {
+    border: 5px solid #555;
+    border-radius: 25px;
+}
+
 @media screen and (max-width: 700px) {
     * {
         font-size: 18px
@@ -230,24 +247,24 @@ h2 {
     h2 {
         font-size: 20px;
     }
-    
-    .services{
+
+    .services {
         height: 205vh;
     }
-    
-    .group{
+
+    .group {
         left: 12.5vw;
     }
-    
-    .vitrini{
+
+    .vitrini {
         width: 50vw;
     }
 
     .art {
         height: 415vh;
     }
-    
-    .gallery{
+
+    .gallery {
         text-align: center;
     }
 
@@ -286,15 +303,5 @@ h2 {
 
     100% {
         background-color: #333;
-    }
-}
-
-@keyframes nav {
-    0% {
-        left: 20vw;
-    }
-
-    100% {
-        left: 0;
     }
 }
