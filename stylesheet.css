@@ -12,6 +12,9 @@ html {
     background-color: #333;
     color: white;
     height: 100vh;
+    
+    display: flex;
+    align-items: center;
 }
 
 .container {
@@ -21,9 +24,9 @@ html {
 
 .nav {
     text-align: right;
-    position: relative;
+    position: absolute;
     top: 8vh;
-    left: 6vw;
+    right: 4vw;
 }
 
 .nav a {
@@ -31,9 +34,9 @@ html {
     text-decoration: none;
     font-family: sans-serif;
     background-color: #333;
-    padding: 1vw;
+    padding: 0.65vw;
     margin: 0.5vw;
-    border-radius: 2vw;
+    border-radius: 10px;
 }
 
 .nav a:hover {
@@ -46,11 +49,6 @@ html {
     color: red;
 }
 
-.name {
-    position: relative;
-    top: 40vh;
-}
-
 .name a {
     text-decoration: none;
     color: white;
@@ -58,7 +56,7 @@ html {
     font-weight: bold;
     background: #0078FF;
     padding: 1vh;
-    border-radius: 1vh;
+    border-radius: 10px;
 }
 
 .name a:hover {
@@ -70,9 +68,6 @@ html {
     width: 6.5vw;
     left: 92vw;
     top: 70vh;
-    text-align: left;
-    animation-name: icons;
-    animation-duration: 1s;
 }
 
 .profile img {
@@ -80,11 +75,10 @@ html {
     margin: 0.5vh;
     background-color: #333;
     position: relative;
-    animation-name: icons;
     animation-name: back-color;
     animation-duration: 1s;
     padding: 1vh;
-    border-radius: 1vh;
+    border-radius: 10px;
 }
 
 .profile img:hover {
@@ -107,11 +101,20 @@ h2 {
     color: white;
     height: 100vh;
     text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+    flex-direction: column;
 }
 
-.group {
-    position: relative;
-    left: 3.6vw;
+.services .gallery{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+    flex-direction: column;
 }
 
 .vitrini {
@@ -121,8 +124,8 @@ h2 {
     float: left;
     /*border: 3px solid #333;*/
     padding: 1vw;
-    border-radius: 1vw;
-    margin: 3vh 1vw 0 1vw;
+    border-radius: 10px;
+    margin: 3vh 1vw;
     text-decoration: none;
     color: white;
 }
@@ -133,7 +136,7 @@ h2 {
 
 .vitrini img {
     width: 100%;
-    border-radius: 1vw;
+    border-radius: 10px;
 }
 
 .price {
@@ -141,14 +144,20 @@ h2 {
     margin: auto;
     background-color: #333;
     padding: 0.5vw;
-    border-radius: 1vw;
+    border-radius: 10px;
 }
 
 .art {
     background-color: #111;
     color: white;
-    height: 138vh;
+    height: 125vh;
     font-family: sans-serif;
+    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+    flex-direction: column;
 }
 
 .art a {
@@ -156,15 +165,19 @@ h2 {
     color: white;
 }
 
-.gallery {
-    padding: 5vw 0 0 0;
+.art .gallery {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+    flex-direction: column;
 }
 
 .image {
     border: 2px solid #333;
     width: 14vw;
     text-align: center;
-    border-radius: 1vw;
+    border-radius: 10px;
     float: left;
     margin: 2vw 1vw 1vw 0vw;
 }
@@ -175,7 +188,7 @@ h2 {
 
 .image img {
     width: 80%;
-    border-radius: 1vw;
+    border-radius: 10px;
     margin: 1vw 1vw 0px 1vw;
 }
 
@@ -185,24 +198,13 @@ h2 {
 
 .presentation {
     height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 .about {
-    position: relative;
-    width: 80vw;
-    top: 25vh;
     text-align: justify;
-
-}
-
-.about a {
-    text-decoration: none;
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    background: #0078FF;
-    padding: 1vh;
-    border-radius: 1vh;
 }
 
 .inLive {
@@ -216,12 +218,6 @@ h2 {
     align-items: center;
 }
 
-.inLive .nav{
-    position: absolute;
-    top: 8vh;
-    right: 4vw;
-}
-
 .live {
     display: flex;
     flex-direction: row;
@@ -231,16 +227,6 @@ h2 {
 
 .live iframe {
     border-radius: 10px;
-}
-
-@keyframes icons {
-    0% {
-        left: 110vw;
-    }
-
-    100% {
-        left: 92vw;
-    }
 }
 
 @keyframes back-color {
