@@ -1,25 +1,40 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-size: 20px;
+    font: 20px 'Raleway', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-.business_card {
-    background-color: #333;
-    color: white;
-    height: 100vh;
-    
-    display: flex;
-    align-items: center;
+body {
+    background: #151426;
+    color: #F2F2F2;
 }
 
-.container {
+h1 {
+    font: bolder 70px 'Raleway', sans-serif;
+}
+
+h2 {
+    font: bold 30px 'Raleway', sans-serif;
+}
+
+.container{
     width: 80vw;
     margin: auto;
+}
+
+#nw {
+    text-decoration: line-through;
+    color: red;
+}
+
+.business_card {
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .nav {
@@ -30,151 +45,145 @@ html {
 }
 
 .nav a {
-    color: white;
+    color: #85A6A6;
     text-decoration: none;
-    font-family: sans-serif;
-    background-color: #333;
-    padding: 0.65vw;
-    margin: 0.5vw;
-    border-radius: 10px;
+    font-weight: 600;
+    background: #151426;
+    padding: 5px 15px;
+    margin: 2px;
+    border-radius: 30px;
 }
 
 .nav a:hover {
-    background-color: white;
-    color: black;
+    color: #F2F2F2;
+    background: #563973;
 }
 
-#nw {
-    text-decoration: line-through;
-    color: red;
+.name h1 {
+    font-size: 100px;
+    background: #67428C;
+    border-radius: 0px 75px 75px 0px;
+    padding: 0px 40px 0px 10vw;
+}
+
+.name h2 {
+    font-size: 35px;
+    color: #563973;
+    position: relative;
+    left: 10vw;
 }
 
 .name a {
+    position: relative;
+    left: 10vw;
     text-decoration: none;
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    background: #0078FF;
-    padding: 1vh;
-    border-radius: 10px;
+    color: #F2F2F2;
+    font: bold 25px 'Raleway', sans-serif;
+    background: #67428C;
+    padding: 5px 15px;
+    border-radius: 20px;
 }
 
 .name a:hover {
-    background: #0056DD
+    background: #563973
 }
 
 .profile {
     position: fixed;
     width: 6.5vw;
     left: 92vw;
-    top: 70vh;
+    top: 69vh;
 }
 
 .profile img {
-    width: 5vh;
-    margin: 0.5vh;
-    background-color: #333;
+    width: 35px;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: #151426;
     position: relative;
     animation-name: back-color;
     animation-duration: 1s;
-    padding: 1vh;
-    border-radius: 10px;
+    padding: 5px;
 }
 
 .profile img:hover {
-    background-color: #5400ff;
-}
-
-h1 {
-    font-family: sans-serif;
-    font-size: 70px;
-}
-
-h2 {
-    font-family: sans-serif;
-    font-size: 30px;
+    background-color: #563973;
 }
 
 .services {
-    background-color: #222;
     font-family: sans-serif;
     color: white;
     height: 100vh;
     text-align: center;
-    
+
     display: flex;
     align-items: center;
     justify-items: center;
-    
+
     flex-direction: column;
 }
 
-.services .gallery{
+.services .gallery {
     display: flex;
     align-items: center;
     justify-items: center;
-    
+
     flex-direction: column;
 }
 
 .vitrini {
     width: 20vw;
     height: 58vh;
-    background-image: linear-gradient(#333, #222);
+    background-image: linear-gradient(#563973, #151426);
     float: left;
-    /*border: 3px solid #333;*/
-    padding: 1vw;
-    border-radius: 10px;
-    margin: 3vh 1vw;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 30px 30px;
     text-decoration: none;
-    color: white;
+    color: #F2F2F2;
 }
 
 .vitrini:hover {
-    background-image: linear-gradient(#5400ff, #222);
+    background-image: linear-gradient(#67428C, #151426);
 }
 
 .vitrini img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .price {
-    width: 80%;
+    width: 90%;
     margin: auto;
-    background-color: #333;
-    padding: 0.5vw;
-    border-radius: 10px;
+    background: #151426;
+    border: 2px solid #563973;
+    padding: 10px;
+    border-radius: 0px 0px 80px 80px;
 }
 
 .art {
-    background-color: #111;
-    color: white;
+    color: #F2F2F2;
     height: 125vh;
-    font-family: sans-serif;
-    
     display: flex;
     align-items: center;
     justify-items: center;
-    
     flex-direction: column;
 }
 
 .art a {
     text-decoration: none;
-    color: white;
+    color: #F2F2F2;
 }
 
 .art .gallery {
     display: flex;
     align-items: center;
     justify-items: center;
-    
     flex-direction: column;
 }
 
 .image {
-    border: 2px solid #333;
+    background-image: linear-gradient(#563973, #151426);
     width: 14vw;
     text-align: center;
     border-radius: 10px;
@@ -183,11 +192,11 @@ h2 {
 }
 
 .image:hover {
-    border: 2px solid #5400ff
+    background-image: linear-gradient(#67428C, #151426);
 }
 
 .image img {
-    width: 80%;
+    width: 85%;
     border-radius: 10px;
     margin: 1vw 1vw 0px 1vw;
 }
@@ -208,11 +217,10 @@ h2 {
 }
 
 .inLive {
-    background-color: #333;
     color: white;
     height: 100vh;
     font-family: sans-serif;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,16 +233,6 @@ h2 {
     align-items: center;
 }
 
-.live iframe {
-    border-radius: 10px;
-}
-
-@keyframes back-color {
-    0% {
-        background-color: #5400ff;
-    }
-
-    100% {
-        background-color: #333;
-    }
+.live iframe{
+    border-radius: 5px;
 }
