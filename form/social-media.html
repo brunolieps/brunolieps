@@ -1,0 +1,209 @@
+<!doctype HTML>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../src/fav/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheet.css">
+    <title>Bruno Lira | Social Media (Formulário)</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150894207-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150894207-3');
+    </script>
+    <script>
+        //Business Name.
+        var name;
+
+        //Business Email.
+        var email;
+
+        //Business Area.
+        var area;
+
+        //Business Site.
+        var site;
+
+        //Business Size.
+        var frequency;
+
+        //Business Competitors.
+        var competitors;
+
+        //Observations.
+        var observations;
+
+        var priceService
+
+        //Get the price of the service and show to the user.
+        function ShowPrice(servicePrice, frequencyValue) {
+            frequency = frequencyValue;
+            priceService = servicePrice;
+            price.innerHTML = '<h3 style="color: red; text-decoration: line-through;">de: R$' + servicePrice * 2 + ',00</h3> por: R$' + servicePrice + ',00';
+        }
+
+        function Submit() {
+            name = Name.value;
+            email = Email.value;
+            area = Area.value;
+            site = Site.value;
+            competitors = Competitors.value;
+            observations = Observations.value;
+
+            var facebook = Facebook.checked;
+            var instagram = Instagram.checked;
+            var twitter = Twitter.checked;
+            var linkedin = Linkedin.checked;
+            var youtube = Youtube.checked;
+            var twitch = Twitch.checked;
+
+            //Message to send.
+            var messageText = "Serviço de Identidade Visual\nValor: R$" + priceService + ",00\n\nNome: " + name + "\nE-mail: " + email + "\n\nSite: " + site + "\nÁrea de Atuação: " + area + "\n\nFrequência de Postagem (por semana): " + frequency + " vezes\nRedes Sociais:\n Facebook - " + facebook + "\n Instagram - " + instagram + "\n Twitter - " + twitter + "\n Linkedin - " + linkedin + "\n Youtube - " + youtube + "\n Twitch - " + twitch + "\n\nConcorrentes: " + competitors + "\nObservações: " + observations;
+
+            //Convert message to URL.
+            var messageURL = messageText.replace(/ /g, "%20").replace(/\n/g, "%0A").replace(/#/g, '');
+
+            if (name != "" && email != "" && frequency != undefined) {
+                //console.log(messageText);
+
+                window.open("https://wa.me/5561982891277?text=" + messageURL, '_blank')
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="centralizer" style="flex-direction: column; padding: 10vh 0px 10vh 0px;">
+        <div class="navigation-bar">
+            <a href="../index.html">Ínicio</a>
+        </div>
+        <h2>Nome da Empresa*</h2>
+        <input id="Name" name="name" type="text" placeholder="Bruno Lira e associados" style='border-radius: 50px;
+                                                                                   text-align: center;
+                                                                                   font-size: 22px;
+                                                                                   width: 80vw;
+                                                                                   margin: 1vh 0 3vh 0;
+                                                                                   padding: 7px 0px 7px 0px;'>
+        <h2>e-Mail*</h2>
+        <input id='Email' name="e-mail" type="text" placeholder="bruno-lira@gmail.com" style='border-radius: 50px;
+                                                                                text-align: center;
+                                                                                font-size: 22px;
+                                                                                   width: 80vw;
+                                                                                   margin: 1vh 0 3vh 0;
+                                                                                   padding: 7px 0px 7px 0px;'>
+        <h2>Área de Atuação</h2>
+        <input id='Area' name="area" type="text" placeholder="Engenharia" style='border-radius: 50px;
+                                                                                text-align: center;
+                                                                                font-size: 22px;
+                                                                                   width: 80vw;
+                                                                                   margin: 1vh 0 3vh 0;
+                                                                                   padding: 7px 0px 7px 0px;'>
+        <h2>Site</h2>
+        <input id='Site' name="site" type="text" placeholder="www.engenharia.com.br" style='border-radius: 50px;
+                                                                                text-align: center;
+                                                                                font-size: 22px;
+                                                                                   width: 80vw;
+                                                                                   margin: 1vh 0 3vh 0;
+                                                                                   padding: 7px 0px 7px 0px;'>
+        <h2>Frequência de postagem (por semana)*</h2>
+        <div class="gallery" style="padding: 0px;
+                                    width: 80vw;
+                                    margin: 1vh 0 3vh 0;
+                                    grid-template-columns: auto auto auto;">
+            <div style="background: #67428C;
+                        padding: 7px;
+                        border-radius: 50px;">
+                <input name="Frequency" type="radio" value="1" onclick="ShowPrice(150, this.value)">1x
+            </div>
+            <div style="background: #67428C;
+                        padding: 7px;
+                        border-radius: 50px;">
+                <input name="Frequency" type="radio" value="2" onclick="ShowPrice(250, this.value)">2x
+            </div>
+            <div style="background: #67428C;
+                        padding: 7px;
+                        border-radius: 50px;">
+                <input name="Frequency" type="radio" value="3" onclick="ShowPrice(350, this.value)">3x
+            </div>
+            <div style="background: #67428C;
+                        padding: 7px;
+                        border-radius: 50px;">
+                <input name="Frequency" type="radio" value="4" onclick="ShowPrice(450, this.value)">4x
+            </div>
+            <div style="background: #67428C;
+                        padding: 7px;
+                        border-radius: 50px;">
+                <input name="Frequency" type="radio" value="5" onclick="ShowPrice(550, this.value)">5x
+            </div>
+            <div style="background: #67428C;
+                        padding: 7px;
+                        border-radius: 50px;">
+                <input name="Frequency" type="radio" value="6" onclick="ShowPrice(650, this.value)">6x
+            </div>
+        </div>
+        <h2>Redes Sociais*</h2>
+        <div class="gallery" style="padding: 0px;
+                                    width: 80vw;
+                                    margin: 1vh 0 3vh 0;
+                                    grid-template-columns: auto auto;">
+            <div style="background: #67428C;
+                        padding: 7px;
+                        border-radius: 50px;">
+                <input id="Facebook" type="checkbox">Facebook
+            </div>
+            <div style="background: #67428C;
+                        padding: 7px;
+                        border-radius: 50px;">
+                <input id="Instagram" type="checkbox">Instagram
+            </div>
+            <div style="background: #67428C;
+                        padding: 7px;
+                        border-radius: 50px;">
+                <input id="Twitter" type="checkbox">Twitter
+            </div>
+            <div style="background: #67428C;
+                        padding: 7px;
+                        border-radius: 50px;">
+                <input id="Linkedin" type="checkbox">Linkedin
+            </div>
+            <div style="background: #67428C;
+                        padding: 7px;
+                        border-radius: 50px;">
+                <input id="Youtube" type="checkbox">Youtube
+            </div>
+            <div style="background: #67428C;
+                        padding: 7px;
+                        border-radius: 50px;">
+                <input id="Twitch" type="checkbox">Twitch
+            </div>
+        </div>
+        <h2>Concorrentes</h2>
+        <textarea id='Competitors' rows="4" placeholder="MRV - www.mrv.com.br" style='border-radius: 10px;
+                         text-align: center;
+                         font-size: 22px;
+                         width: 80vw;
+                         margin: 1vh 0 3vh 0;
+                         padding: 7px 0px 7px 0px;'></textarea>
+        <h2>Observações</h2>
+        <textarea id='Observations' rows="4" placeholder="Qual o posicionamento da empresa na sociedade atual?" style='border-radius: 10px;
+                         text-align: center;
+                         font-size: 22px;
+                         width: 80vw;
+                         margin: 1vh 0 3vh 0;
+                         padding: 7px 0px 7px 0px;'></textarea>
+        <h2 id='price'></h2>
+        <button onclick="Submit()">Enviar</button>
+    </section>
+</body></html>
