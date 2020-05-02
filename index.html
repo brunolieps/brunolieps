@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Bruno Lira | Designer Gráfico</title>
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150894207-3"></script>
     <script>
@@ -25,10 +25,10 @@
 </head>
 
 <body>
-    <section>
+    <section id="home">
         <div class="navigation-bar">
-            <a href="#services">Serviços</a>
             <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
             <a href="live.html" target="_blank">Ao Vivo</a>
             <a href="blog.html" target="_blank">Blog</a>
         </div>
@@ -47,65 +47,108 @@
         </div>
     </section>
 
-    <section id="services" class="centralizer">
-        <a class="item" href="social-media.html">
-            <div class="product">
-                <img src="src/design/social-media/Precau%C3%A7%C3%A3o_Artboard%201.jpg">
-                Gestão e Criação para
-                <br>
-                <h2>Redes Sociais</h2>
+    <div style="height: 50vh;
+                display: flex;
+                align-items: center;">
+        <div class="centralizer">
+            <div style="text-align: left; width: 50%">
+                <h2>"O melhor serviço do mundo"</h2>
+                -Minha mãe.
             </div>
-            <br>
-            <div class="price">
-                a partir de:
-                <h2>R$150,00</h2>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="centralizer" style="opacity: 1;">
+            <div id="about-grid" class="gallery">
+                <div class="text-photo">
+                    <img src="src/design/social-media/Manda%20Jobs%20-%20Jan%202020.jpg" style="height: 100%;                                                                                 width: 100%">
+                </div>
+                <div>
+                    <h1>Bruno Lira</h1>
+                    <br>
+                    <p>
+                        Inspirado para mudar o mundo! Trabalha para desenvolver a comunicação de empresas nas redes sociais. Acredita que o mercado digital seja na verdade uma forma essencial de atender seu cliente.
+                    </p>
+                    <br>
+                    <h2>Missão</h2>
+                    <p>
+                        Trazer seu cliente até você! Tornar seu negócio conhecido entre os usuários, gerar engajamento e assim desenvolver uma comunidade em volta do seu produto ou serviço.
+                    </p>
+                    <br>
+                    <h2>Visão</h2>
+                    <p>
+                        Seus clientes precisam de uma forma de conhecer seu negócio, ter avialiação de outros que já conhecem seu serviço e então entrar em contato direto com você.
+                    </p>
+                    <br>
+                    <h2>Valor</h2>
+                    <p>
+                        Empenhado em extrair o melhor do seu negócio e tornar o seu público alvo em clientes fiéis da sua empresa.
+                    </p>
+                </div>
             </div>
-        </a>
-        <a class="item" href="logo.html">
-            <div class="product">
-                <img src="src/design/logo/How%20we%20Play.jpg">
-                Criação de
-                <br>
-                <h2>Identidade Visual</h2>
-            </div>
-            <br>
-            <div class="price">
-                a partir de:
-                <h2>R$175,00</h2>
-            </div>
-        </a>
-        <a class="item" href="website.html">
-            <div class="product">
-                <img src="src/design/logo/Logo%20Preenchida%20web.png">
-                Criação de
-                <h2>Web Site</h2>
-            </div>
-            <br>
-            <div class="price">
-                a partir de:
-                <h2>R$200,00</h2>
-            </div>
-        </a>
+        </div>
     </section>
 
-    <section id="about" class="centralizer" style="flex-direction: column;
-                    text-align:justify;">
+    <div style="height: 50vh;
+                display: flex;
+                align-items: center;
+                background: #090820;">
+        <div class="centralizer">
+            <div class="gallery" style="grid-template-columns: 50% 50%;">
+                <div style="text-align: left;">
+                    <h2>"As artes mais bonitas"</h2>
+                    -Minha tia.
+                </div>
+                <div style="text-align: left;">
+                    <h2>"Faz uma arte rapidinha pra mim"</h2>
+                    -Meu pai.
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <h1 style="background: #67428C; 
-                       border-radius: 50px;
-                       padding: 0px 50px 0px 50px; 
-                       text-align: center;">Bruno Lira</h1>
-
-        <h2 style="color: #563973; 
-                   text-align: center">Designer & Ilustrador.</h2>
-        <br>
-        <p>
-            &emsp;Brasiliense, inspirado para mudar o mundo. Eu venho trabalhando principalmente com marketing digital, desenvolvendo a comunicação de empresas nas redes sociais. Acredito que atualmente o mercado digital seja mais do que apenas uma forma de expandir, na verdade uma forma essencial de atender seu cliente.
-        </p>
-        <br>
-        <p>
-            &emsp;Seus clientes precisam de uma forma de conhecer seu negócio, ter avialiação de outros que já conhecem seu serviço e então entrar em contato direto com você.
-        </p>
+    <section id="services">
+        <div class="centralizer">
+            <a class="item" href="social-media.html">
+                <div class="product">
+                    <img src="src/design/social-media/Precau%C3%A7%C3%A3o_Artboard%201.jpg">
+                    Gestão e Criação para
+                    <br>
+                    <h2>Redes Sociais</h2>
+                </div>
+                <br>
+                <div class="price">
+                    a partir de:
+                    <h2>R$150,00</h2>
+                </div>
+            </a>
+            <a class="item" href="logo.html">
+                <div class="product">
+                    <img src="src/design/logo/How%20we%20Play.jpg">
+                    Criação de
+                    <br>
+                    <h2>Identidade Visual</h2>
+                </div>
+                <br>
+                <div class="price">
+                    a partir de:
+                    <h2>R$175,00</h2>
+                </div>
+            </a>
+            <a class="item" href="website.html">
+                <div class="product">
+                    <img src="src/design/logo/Logo%20Preenchida%20web.png">
+                    Criação de
+                    <h2>Web Site</h2>
+                </div>
+                <br>
+                <div class="price">
+                    a partir de:
+                    <h2>R$200,00</h2>
+                </div>
+            </a>
+        </div>
     </section>
 
 </body></html>
