@@ -234,7 +234,7 @@ button {
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-size: 100%;
+    background-size: cover;
 }
 
 #social-media::before{
@@ -252,7 +252,7 @@ button {
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-size: 100%;
+    background-size: cover;
 }
 
 #logo::before{
@@ -270,7 +270,7 @@ button {
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-size: 100%;
+    background-size: cover;
 }
 
 #website::before {
@@ -288,7 +288,7 @@ button {
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-size: 100%;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 768px) {
