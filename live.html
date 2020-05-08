@@ -8,6 +8,15 @@
     <link rel="shortcut icon" href="src/fav/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="fb:app_id" content="0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brunoeps.me/live">
+    <meta property="og:title" content="Bruno Lira | Ao Vivo">
+    <meta property="og:image" content="https://brunoeps.me/src/thumb/live.jpg">
+    <meta property="og:description" content="Inspirado para mudar o mundo! Trabalha para desenvolver a comunicação de empresas nas redes sociais. Acredita que o mercado digital seja na verdade uma forma essencial de atender seu cliente.">
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150894207-3"></script>
     <script>
@@ -19,11 +28,37 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-150894207-3');
-    </script>
-    <script>
-        window.location.href = 'https://twitch.tv/brunolieps'
+
     </script>
 </head>
 
 <body>
-</body></html>
+    <section id="live" class="centralizer">
+        <div class="navigation-bar">
+                <a id="action" href="https://streamelements.com/brunolieps/tip" target="_blank">DONATE</a>
+                <a href="index.html">Ínicio</a>
+            </div>
+        <div style="background-color: #000; padding: 5px 5px 5px 5px; border-radius: 10px; width: 80vw; height: 480px;">
+            <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed"></div>
+
+            <!-- Load the Twitch embed script -->
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+            <script type="text/javascript">
+                new Twitch.Embed("twitch-embed", {
+                    width: "100%",
+                    height: 480,
+                    channel: "brunolieps",
+                    theme: 'dark',
+                    // only needed if your site is also embedded on embed.example.com and othersite.example.com 
+                    parent: ["brunoeps.me"]
+                });
+
+            </script>
+        </div>
+    </section>
+</body>
+
+</html>
