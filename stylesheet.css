@@ -202,7 +202,7 @@ button {
     grid-area: 1 / 1 / span 1/ span 3;
 }
 
-iframe{
+iframe {
     border: 0px;
     border-radius: 10px;
 }
@@ -211,6 +211,19 @@ iframe{
     grid-template-columns: 50% 50%;
     margin: auto;
     text-align: justify;
+}
+
+#grid-section {
+    grid-template-columns: 45vw 45vw;
+    padding: 0;
+}
+
+#grid-comunity {
+    grid-template-columns: 20vw auto;
+    grid-template-rows: 40vh 15vh;
+    background: #000;
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px
 }
 
 #home::before {
@@ -403,7 +416,17 @@ iframe{
         padding: 10%;
         grid-area: 1 / 1 / span 1/ span 2;
     }
+    
+    #grid-section{
+        grid-template-columns: 90vw;
+        grid-template-rows: auto 15vh;
+    }
 
+    #grid-comunity {
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 35vh 10vh;
+}
+    
     #about-grid {
         grid-template-columns: auto;
     }

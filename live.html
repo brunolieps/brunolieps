@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="src/fav/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="fb:app_id" content="0">
     <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
     <meta property="og:title" content="Bruno Lira | Ao Vivo">
     <meta property="og:image" content="https://brunoeps.me/src/thumb/live.jpg">
     <meta property="og:description" content="Inspirado para mudar o mundo! Trabalha para desenvolver a comunicação de empresas nas redes sociais. Acredita que o mercado digital seja na verdade uma forma essencial de atender seu cliente.">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150894207-3"></script>
     <script>
@@ -33,30 +33,43 @@
 </head>
 
 <body>
-    <section id="live" class="centralizer">
+    <section class="centralizer">
         <div class="navigation-bar">
-                <a id="action" href="https://streamelements.com/brunolieps/tip" target="_blank">DONATE</a>
-                <a href="index.html">Ínicio</a>
+            <a id="action" href="https://streamelements.com/brunolieps/tip" target="_blank">DONATE</a>
+            <a href="index.html">Ínicio</a>
+        </div>
+        <div id="grid-section" class="gallery">
+            <div id="grid-comunity" class="gallery">
+                <img src="src/fav/Sinal%20de%20Ok.jpg" style="
+                                                          height: 100%;
+                                                          width: 100%;">
+                <div style="display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;">
+                    <a id="action" href="https://discord.gg/pMyfVG6" target="_blank" style="height: 100%; 
+                                                                                display: flex;
+                                                                                align-items: center;
+                                                                                justify-content: center;
+                                                                                text-align: center;
+                                                                                text-decoration: none;
+                                                                                border-radius: 10px;">
+                        ENTRE PARA COMUNIDADE
+                    </a>
+                </div>
+                <div style="text-align: justify; grid-area: 2 / 1 / span 1/ span 2;">Temos uma pequena comunidade no discord, onde conversamos sobre assuntos diversos, Mostramos nossa arte, interagimos com brincadeiras e enquetes e torna-mos o habito de assistir a live muito mais divertido.</div>
             </div>
-        <div style="background-color: #000; padding: 5px 5px 5px 5px; border-radius: 10px; width: 80vw; height: 480px;">
-            <!-- Add a placeholder for the Twitch embed -->
-            <div id="twitch-embed"></div>
-
-            <!-- Load the Twitch embed script -->
-            <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-            <script type="text/javascript">
-                new Twitch.Embed("twitch-embed", {
-                    width: "100%",
-                    height: 480,
-                    channel: "brunolieps",
-                    theme: 'dark',
-                    // only needed if your site is also embedded on embed.example.com and othersite.example.com 
-                    parent: ["brunoeps.me"]
-                });
-
-            </script>
+            <div style="height: 100%; 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;">
+                <a id="action" href="https://twitch.tv/brunolieps" style="text-decoration: none;
+                                                                          padding: 5px 15px;
+                                                                          border-radius: 50px">
+                    Continuar para a live.
+                </a>
+            </div>
         </div>
     </section>
 </body>
