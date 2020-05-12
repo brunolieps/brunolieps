@@ -416,17 +416,17 @@ iframe {
         padding: 10%;
         grid-area: 1 / 1 / span 1/ span 2;
     }
-    
-    #grid-section{
+
+    #grid-section {
         grid-template-columns: 90vw;
         grid-template-rows: auto 15vh;
     }
 
     #grid-comunity {
-    grid-template-columns: 40vw 40vw;
-    grid-template-rows: 35vh 10vh;
-}
-    
+        grid-template-columns: 38vw 38vw;
+        grid-template-rows: 25vh 15vh;
+    }
+
     #about-grid {
         grid-template-columns: auto;
     }
