@@ -1,0 +1,77 @@
+*{
+    color: white;
+}
+
+body{
+    background: #550099;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: #eee;
+}
+
+.neumorphism{
+    border: 0px;
+    box-shadow:  20px 20px 60px rgba(0, 0, 0, 0.25), 
+                -20px -20px 60px rgba(255, 255, 255, 0.25);
+    animation-name: btn-pop;
+    animation-duration: 0.5s;
+}
+.neumorphism-btn{
+    color: white;
+    border: 0px;
+    box-shadow:  20px 20px 60px rgba(0, 0, 0, 0.25), 
+                -20px -20px 60px rgba(255, 255, 255, 0.25);
+    animation-name: btn-pop;
+    animation-duration: 0.5s;
+}
+
+.neumorphism-btn:hover{
+    color: white;
+    border: 0px;
+    box-shadow:  20px 20px 60px rgba(0, 0, 0, 0), 
+                -20px -20px 60px rgba(255, 255, 255, 0);
+    animation-name: btn-hide;
+    animation-duration: 0.5s;
+}
+
+@keyframes btn-pop{
+    from{
+        box-shadow:  20px 20px 60px rgba(0, 0, 0, 0), 
+                    -20px -20px 60px rgba(255, 255, 255, 0);
+    }
+
+    to{
+        box-shadow:  20px 20px 60px rgba(0, 0, 0, 0.25), 
+                    -20px -20px 60px rgba(255, 255, 255, 0.25);
+    }
+}
+
+@keyframes btn-hide{
+    from{
+        box-shadow:  20px 20px 60px rgba(0, 0, 0, 0.25), 
+                    -20px -20px 60px rgba(255, 255, 255, 0.25);
+    }
+
+    to{
+        box-shadow:  20px 20px 60px rgba(0, 0, 0, 0), 
+                    -20px -20px 60px rgba(255, 255, 255, 0);
+    }
+}
+
+/* Home Area */
+#home{
+    height: 100vh;
+}
+
+#about{
+    height: 100vh;
+}
+
+#services{
+    height: 100vh;
+}

@@ -39,137 +39,83 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Bruno Lira</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Ínicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                            Mais
-                        </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Livestream</a></li>
-                        <li><a class="dropdown-item" href="#">Blog</a></li>
-                    </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <div style="height: 25vh;
-                display: flex;
-                align-items: center;">
-        <div class="centralizer">
-            <div style="text-align: left; width: 50%">
-                <h2>"O melhor serviço do mundo"</h2>
-                -Minha mãe.
-            </div>
-        </div>
+    <div class="container">
+        <ul class="nav justify-content-center">
+            <li class="nav-item active"><a href="#" class="nav-link">Ínicio</a></li>
+            <li class="nav-item active"><a href="#services" class="nav-link">Serviços</a></li>
+            <li class="nav-item active"><a href="#about" class="nav-link">Sobre</a></li>
+            <li class="nav-item active"><a href="#" class="nav-link">Ao Vivo</a></li>
+            <li class="nav-item active"><a href="#" class="nav-link">Blog</a></li>
+        </ul>
     </div>
 
-    <section id="about">
-        <div class="centralizer" style="opacity: 1;">
-            <div id="about-grid" class="gallery">
-                <div class="text-photo">
-                    <img src="src/design/social-media/Manda%20Jobs%20-%20Jan%202020.jpg" style="height: 100%;                                                                                 width: 100%">
-                </div>
-                <div>
+    <section id="home" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
                     <h1>Bruno Lira</h1>
-                    <br>
-                    <p>
-                        Inspirado para mudar o mundo! Trabalha para desenvolver a comunicação de empresas nas redes sociais. Acredita que o mercado digital seja na verdade uma forma essencial de atender seu cliente.
-                    </p>
-                    <br>
-                    <h2>Missão</h2>
-                    <p>
-                        Trazer seu cliente até você! Tornar seu negócio conhecido entre os usuários, gerar engajamento e assim desenvolver uma comunidade em volta do seu produto ou serviço.
-                    </p>
-                    <br>
-                    <h2>Visão</h2>
-                    <p>
-                        Seus clientes precisam de uma forma de conhecer seu negócio, ter avialiação de outros que já conhecem seu serviço e então entrar em contato direto com você.
-                    </p>
-                    <br>
-                    <h2>Valor</h2>
-                    <p>
-                        Empenhado em extrair o melhor do seu negócio e tornar o seu público alvo em clientes fiéis da sua empresa.
-                    </p>
+                </div>
+                <div class="col">
+                    <img class="rounded-circle neumorphism-btn" src="src/photo/Perfil.jpg" width="100%" style="transform: scaleX(-1);">
                 </div>
             </div>
         </div>
     </section>
 
-    <div style="height: 25vh;
-                display: flex;
-                align-items: center;">
-        <div class="centralizer">
-            <div class="gallery" style="grid-template-columns: 50% 50%;">
-                <div style="text-align: left;">
-                    <h2>"As artes mais bonitas"</h2>
-                    -Minha tia.
+    <section id="services" class="d-flex align-items-center">
+        <div class="container">
+            <div class="card-group neumorphism">
+                <div class="card bg-transparent">
+                    <img class="card-img-top" src="src/design/social-media/covid-19/Precau%C3%A7%C3%A3o_Artboard%201.jpg" width="100%">
+                    <div class="card-body"> 
+                        <h5 class="card-title">Social Media</h5>
+                        <p class="card-text">Criação e gestão de redes sociais.</p>
+                        <a href="#" class="btn neumorphism-btn">Saiba Mais</a>
+                    </div>
                 </div>
-                <div style="text-align: left;">
-                    <h2>"Faz uma arte rapidin pra mim"</h2>
-                    -Meu pai.
+                <div class="card bg-transparent">
+                    <img class="card-img-top" src="src/design/logo/How we Play.jpg" width="100%">
+                    <div class="card-body"> 
+                        <h5 class="card-title">Identidade Visual</h5>
+                        <p class="card-text">Criação de identidade visual.</p>
+                        <a href="#" class="btn neumorphism-btn">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="card bg-transparent">
+                    <img class="card-img-top" src="src/design/logo/Logo Preenchida web.png" width="100%">
+                    <div class="card-body"> 
+                        <h5 class="card-title">Web Design</h5>
+                        <p class="card-text">Criação de web sites.</p>
+                        <a href="#" class="btn neumorphism-btn">Saiba Mais</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <section id="services">
-        <div class="centralizer">
-            <a class="item" href="social-media.html">
-                <div class="product">
-                    <img src="src/design/social-media/covid-19/Precau%C3%A7%C3%A3o_Artboard%201.jpg">
-                    Gestão e Criação para
-                    <br>
-                    <h2>Redes Sociais</h2>
+    <section id="about" class="d-flex align-items-center">
+        <div class="container">
+        <div class="card-group neumorphism">
+            <div class="card bg-transparent">
+                <div class="card-body"> 
+                    <h5 class="card-title">Missão:</h5>
+                    <p class="card-text">Trazer seu cliente até você! Tornar seu negócio conhecido entre os usuários, gerar engajamento e assim desenvolver uma comunidade em volta do seu produto ou serviço.</p>
                 </div>
-                <br>
-                <div class="price">
-                    a partir de:
-                    <h2>R$150,00</h2>
+            </div>
+            <div class="card bg-transparent">
+                <div class="card-body"> 
+                    <h5 class="card-title">Visão:</h5>
+                    <p class="card-text">Seus clientes precisam de uma forma de conhecer seu negócio, ter avialiação de outros que já conhecem seu serviço e então entrar em contato direto com você.</p>
                 </div>
-            </a>
-            <a class="item" href="logo.html">
-                <div class="product">
-                    <img src="src/design/logo/How%20we%20Play.jpg">
-                    Criação de
-                    <br>
-                    <h2>Identidade Visual</h2>
+            </div>
+            <div class="card bg-transparent">
+                <div class="card-body"> 
+                    <h5 class="card-title">Valores:</h5>
+                    <p class="card-text">Empenhado em extrair o melhor do seu negócio e tornar o seu público alvo em clientes fiéis da sua empresa.</p>
                 </div>
-                <br>
-                <div class="price">
-                    a partir de:
-                    <h2>R$175,00</h2>
-                </div>
-            </a>
-            <a class="item" href="website.html">
-                <div class="product">
-                    <img src="src/design/logo/Logo%20Preenchida%20web.png">
-                    Criação de
-                    <h2>Web Site</h2>
-                </div>
-                <br>
-                <div class="price">
-                    a partir de:
-                    <h2>R$200,00</h2>
-                </div>
-            </a>
+            </div>
+        </div>
         </div>
     </section>
 
