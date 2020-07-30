@@ -2,13 +2,19 @@
 <html>
 
 <head>
+    <!-- Brand data -->
     <meta charset="utf-8">
     <link rel="shortcut icon" href="src/fav/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet.css">
     <title>Bruno Lira | Designer e Ilustrador</title>
 
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <!-- Responsive Metadata -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social Media Metadata -->
     <meta property="fb:app_id" content="0">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://brunoeps.me/">
@@ -17,6 +23,7 @@
     <meta property="og:description" content="Inspirado para mudar o mundo! Trabalha para desenvolver a comunicação de empresas nas redes sociais. Acredita que o mercado digital seja na verdade uma forma essencial de atender seu cliente.">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150894207-3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -32,28 +39,36 @@
 </head>
 
 <body>
-    <section id="home">
-        <div class="navigation-bar">
-            <a href="#home">Ínicio</a>
-            <a href="#about">Sobre</a>
-            <a href="#services">Serviços</a>
-            <a href="live.html">Ao Vivo</a>
-            <a href="blog.html" target="_blank">Blog</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bruno Lira</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Ínicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Mais
+                        </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Livestream</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="name">
-            <h1>BRUNO LIRA</h1>
-            <h2>DESIGNER e ILUSTRADOR</h2>
-            <br>
-            <a href="https://wa.me/556182891277?text=Eu%20gostaria%20de%20conversar%20sobre%20os%20seus%20servi%C3%A7os." target="_blank">ENTRE EM CONTATO!</a>
-        </div>
-        <div class="floating-menu">
-            <a href="https://instagram.com/bruno.eps" target="_blank"><img src="src/social_media/029-instagram.svg"></a>
-
-            <a href="https://twitter.com/brunolieps" target="_blank"><img src="src/social_media/008-twitter.svg"></a>
-
-            <a href="https://www.linkedin.com/in/bruno-oli-lira/" target="_blank"><img src="src/social_media/027-linkedin.svg"></a>
-        </div>
-    </section>
+    </nav>
 
     <div style="height: 25vh;
                 display: flex;
@@ -158,6 +173,8 @@
         </div>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 </body>
 
 </html>
