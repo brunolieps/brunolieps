@@ -6,12 +6,20 @@ body{
     background: #550099;
 }
 
+section{
+    height: 100vh;
+}
+
 a{
     color: white;
 }
 
 a:hover{
     color: #eee;
+}
+
+.card{
+    width: 18rem;
 }
 
 .neumorphism{
@@ -61,17 +69,4 @@ a:hover{
         box-shadow:  20px 20px 60px rgba(0, 0, 0, 0), 
                     -20px -20px 60px rgba(255, 255, 255, 0);
     }
-}
-
-/* Home Area */
-#home{
-    height: 100vh;
-}
-
-#about{
-    height: 100vh;
-}
-
-#services{
-    height: 100vh;
 }
