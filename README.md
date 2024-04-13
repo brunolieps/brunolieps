@@ -1,4 +1,4 @@
-## Hi, I'm Bruno Lira 🧑🏻
+<h1> Hi, I'm Bruno Lira 🧑🏻</h1>
 I am a **Graphic Designer**.
 
 I work to make the world a easier place to live.
