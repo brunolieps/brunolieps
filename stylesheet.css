@@ -1,0 +1,252 @@
+:root {
+    --primary: #121212;
+    --secondary: #ff0022;
+    --text: #fff;
+    --accent: #ffd000;
+}
+
+::selection {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+@keyframes up-down {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(20px);
+    }
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*border: .25px dashed var(--secondary);*/
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    fill: var(--accent);
+    background-color: var(--primary);
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 72px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 56px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: medium;
+}
+
+h4 {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+h5 {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: medium;
+}
+
+button,
+a {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 5px 10px;
+    width: fit-content;
+    overflow: hidden;
+
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    fill: var(--accent);
+    cursor: pointer;
+    text-decoration: none;
+
+    svg {
+        width: 0px;
+        height: 28px;
+    }
+
+    &:hover {
+        background-color: var(--accent);
+        border: 1px solid var(--primary);
+        color: var(--primary);
+        fill: var(--primary);
+        padding: 5px 10px 5px 50px;
+        gap: 10px;
+
+        svg {
+            width: 28px;
+            height: 28px;
+        }
+    }
+}
+
+.container {
+    width: calc(100vw - 100px);
+    max-width: 1200px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    border-bottom: 1px solid var(--secondary);
+
+    div {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        max-width: 100%;
+        min-width: 25%;
+        gap: 20px;
+    }
+}
+
+header {
+    width: 100vw;
+    height: 700px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: url(src/bg_herobanner_brunolira.png) center / cover;
+
+    h3 {
+        border: 1px solid var(--secondary);
+        width: fit-content;
+        padding: 5px 20px;
+        color: var(--secondary);
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--secondary);
+            color: var(--primary);
+            padding: 5px 20px 5px 100px;
+        }
+    }
+
+
+}
+
+#scrolldown {
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    animation: 500ms ease-in-out infinite alternate up-down;
+    color: var(--accent);
+    fill: var(--accent);
+    padding: 5px 10px;
+    border: 0px dashed var(--accent);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+
+    h6 {
+        opacity: 0%;
+    }
+
+    svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    &:hover {
+        border: 2px dashed var(--accent);
+        background-color: #12121288;
+        backdrop-filter: blur(5px);
+
+        h6 {
+            opacity: 100%;
+        }
+    }
+}
+
+main {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container {
+        border-bottom: none;
+        align-items: baseline;
+    }
+}
+
+#contentnav {
+    display: flex;
+    background-color: var(--secondary);
+    padding: 5px;
+    gap: 10px;
+
+    button {
+        border: 1px solid var(--primary);
+        color: var(--primary);
+
+        &:hover {
+            background-color: var(--primary);
+            color: var(--secondary);
+        }
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
